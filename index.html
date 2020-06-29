@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Regex expression</title>
+</head> 
+<body>
+    <h1>Sign up form with regex</h1>
+    <form class="form">
+        <label for="inputUsername" class="form-label">Username</label>
+        <input type="text" id="inputUsername" class="form-control" aria-describedby="usernameHelpBlock">
+        <div id="usernameHelpBlock" class="form-text">
+            Username must be  and contain 5 - 12 character
+        </div>
+
+        <label for="inputEmail" class="form-label">Email address </label>
+        <input type="email" id="emailUsername" class="form-control" aria-describedby="emailHelpBlock">
+        <div id="usernameHelpBlock" class="form-text">
+            Email must be a valid address, e.g. me@mydomain.co
+        </div>
+
+        <label for="inputPassword5" class="form-label">Password</label>
+        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+        <div id="passwordHelpBlock" class="form-text">
+            >Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters
+        </div>
+
+        <label for="inputTelephone" class="form-label">Telephone </label>
+        <input type="number" id="inputTelephone" class="form-control" aria-describedby="telephoneHelpBlock">
+        <div id="telephoneHelpBlock" class="form-text">
+            Telephone must be a valid UK telephone number (11 digits)
+        </div>
+
+        <label for="inputNickname" class="form-label">Nickname </label>
+        <input type="text" id="inputNickname" class="form-control" aria-describedby="nicknameHelpBlock">
+        <div id="nicknameHelpBlock" class="form-text">
+            >Slug must contain only lowercase letters, numbers and hyphens and be 8 - 20 characters
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+         </div>
+
+    </form>
+    
+
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
