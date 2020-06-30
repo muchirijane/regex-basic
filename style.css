@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.form-container{
+    max-width: 500px;
+    margin: 3rem auto;
+
+}
+
+button{
+    margin: 2rem 0;
+}
+
+label{
+    margin-top: .5rem;
+}
+
+@media only screen and (max-width: 600px){
+
+    .form-details{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    button.btn.btn-primary{
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    h1{
+        font-size: 25px;
+    }
+
+    button.btn.btn-primary{
+        margin-left: 7rem;
+    }
+}
