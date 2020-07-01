@@ -2,7 +2,7 @@ const inputs = document.querySelectorAll('input');
 
 const regexPattern = {
     telephone : /^\d{11}$/,
-    fullname: /^[a-z\s]{5,12}$/i,
+    fullname: /^[a-z\s]{10,20}$/i,
     password: /^[\d\w@-]{8,20}$/i,
     username: /^[a-z\d-]{8,20}$/,
     email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
