@@ -16,12 +16,13 @@ body{
     font-size: 16px;
 }
 .form-container{
-    margin-top: 15rem;
+   margin: 10rem 1.5rem;
 }
 h1{
     font-weight: normal;
     margin: 20px auto;
     text-align: center;
+    margin-bottom: 1rem;
 }
 form{
     width: 450px;
@@ -29,20 +30,57 @@ form{
 }
 input{
     display: block;
-    padding: 4px 8px;
-    font-size: 2em;
-    margin: 2rem auto;
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    margin: 1rem auto;
     width: 100%;
-    /* border: none; */
-   border-radius: 5px;
-    border: 3px solid #666666;
+    border-radius: 5px;
+    border: 3px solid #4e0b0b;
     outline: none !important;
+    background-color: honeydew;
+}
+input + p{
+    font-size: 1.4rem;
+    opacity: 0;
+    color: #c20707;
+    text-align: center;
+}
+input.error + p{
+    opacity: 1;
+    margin-bottom: 2rem;
+}
+
+input:focus{
+    box-shadow: rgba(0,0,0,0.3) ;
+}
+
+/* regex validation styles */
+.success{
+    border-color: #07c230;
+}
+.error{
+    border-color: #c20707;
+}
+
+@media only screen and (max-width: 500px) {
+    form{
+        max-width: 400px;
+    }
+    input{
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    form{
+        max-width: 300px;
+    }
+    input{
+        width: 90%;
+    }
 }
 
 
-.valid{
-    border-color: red;
-}
-.invalid{
-    border-color: #224422;
-}
