@@ -7,45 +7,42 @@
 }
 html{
     box-sizing: border-box;
+    font-size: 62.5%;
 }
+
 body{
-    font-size: 18px;
-}
-h1{
-    text-align: center;
-    margin-bottom: 3rem;
+    font-family: arial;
+    color: #333;
+    font-size: 16px;
 }
 .form-container{
-    max-width: 500px;
-    margin: 3rem auto;
-
+    margin-top: 15rem;
+}
+h1{
+    font-weight: normal;
+    margin: 20px auto;
+    text-align: center;
+}
+form{
+    width: 450px;
+    margin: 20px auto;
+}
+input{
+    display: block;
+    padding: 4px 8px;
+    font-size: 2em;
+    margin: 2rem auto;
+    width: 100%;
+    /* border: none; */
+   border-radius: 5px;
+    border: 3px solid #666666;
+    outline: none !important;
 }
 
-button{
-    margin: 2rem 0;
+
+.valid{
+    border-color: red;
 }
-
-label{
-    margin-top: .5rem;
-}
-
-@media only screen and (max-width: 600px){
-
-    .form-details{
-        width: 80%;
-        margin: 1rem auto;
-    }
-    button.btn.btn-primary{
-        margin-left: 10rem;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    h1{
-        font-size: 25px;
-    }
-
-    button.btn.btn-primary{
-        margin-left: 7rem;
-    }
+.invalid{
+    border-color: #224422;
 }
